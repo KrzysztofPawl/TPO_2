@@ -15,7 +15,7 @@ import java.util.concurrent.*;
 public class Main {
 
   public static void main(String[] args) throws Exception {
-    String testFileName = System.getProperty("user.home") + "/ChatTest.txt";
+    String testFileName = System.getProperty("user.home") + "/chat.txt";
     List<String> test = Files.readAllLines(Paths.get(testFileName));
     String host = test.remove(0);
     int port = Integer.valueOf(test.remove(0));
